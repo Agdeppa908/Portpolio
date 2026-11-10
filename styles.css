@@ -1,0 +1,118 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(to left, rgb(98, 137, 196), rgb(104, 63, 201));
+color: #222;
+line-height: 1.5;
+padding: 20px;
+}
+
+.container {
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.header {
+  background:
+    linear-gradient(to bottom right, #426FA8, transparent 70%),
+    linear-gradient(to bottom left, #9BBCE0, transparent 70%),
+    linear-gradient(to top right, #6F9CCB, transparent 70%),
+    linear-gradient(to top left, #C5DDF2, transparent 70%),
+    #EDF5FC;
+border: 2px solid #d0d7de;
+padding: 18px;
+margin-bottom: 18px;
+border-radius: 8px;
+text-align: center;
+}
+.header h1 { letter-spacing: 1px; font-size: 1.6rem; }
+.highlight { color: #0b63d6; font-weight: 600; }
+
+.main-area {
+display: flex;
+gap: 20px;
+align-items: flex-start;
+}
+
+.content {
+flex: 2;
+background: #e0e6ea;
+border: 1px solid #e0e6ea;
+padding: 16px;
+border-radius: 6px;
+}
+
+.sidebar {
+flex: 1;
+   background:
+    linear-gradient(to bottom right, #426FA8, transparent 70%),
+    linear-gradient(to bottom left, #9BBCE0, transparent 70%),
+    linear-gradient(to top right, #6F9CCB, transparent 70%),
+    linear-gradient(to top left, #C5DDF2, transparent 70%),
+    #EDF5FC;
+border: 1px solid #e0e6ea;
+padding: 25px;
+border-radius: 10px;
+}
+
+.profile-card {
+display: flex;
+gap: 16px;
+align-items: center;
+border: 2px dashed #c8d5e8;
+padding: 12px;
+margin-bottom: 14px;
+   background:
+    linear-gradient(to bottom right, #426FA8, transparent 70%),
+    linear-gradient(to bottom left, #9BBCE0, transparent 70%),
+    linear-gradient(to top right, #6F9CCB, transparent 70%),
+    linear-gradient(to top left, #C5DDF2, transparent 70%),
+    #EDF5FC;
+}
+.avatar {
+width: 96px;
+height: 96px;
+object-fit: cover;
+border-radius: 6px;
+border: 3px solid #dbe9ff;
+}
+
+.contact-btn {
+margin-top: 8px;
+padding: 8px 12px;
+border: none;
+border-radius: 4px;
+background: #0b63d6;
+color: white;
+cursor: pointer;
+}
+
+.footer {
+text-align: center;
+margin-top: 16px;
+padding: 10px;
+font-size: 0.9rem;
+color: #3b3b3b;
+}
+
+@media (max-width: 700px) {
+    .main-area {
+        flex-direction: column;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 72px;
+        height: 72px;
+    }
+}   
+
